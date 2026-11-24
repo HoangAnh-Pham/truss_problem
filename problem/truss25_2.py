@@ -150,7 +150,8 @@ def f25con(x):
 # Chạy thử
 # x có giá trị [0.01, 3.5]
 
-x = np.ones(data['nvars'])
-f, g, model = f25con(x)
-print(f,g)
-st.show_geometry3D(model)
+if __name__ == "__main__":
+    x = np.ones(data['nvars'])
+    f, g, model = f25con(x)
+    print(f,g)
+    st.show_geometry3D(model)
